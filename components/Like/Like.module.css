@@ -1,0 +1,27 @@
+.button {
+  height: 48px;
+  width: 48px;
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  position: relative;
+}
+
+.button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.active {
+  border: 1px solid #1473e6;
+}
+
+.active svg {
+  stroke: #1473e6;
+}
+
+.isLoading {
+  pointer-events: none;
+  opacity: 40%;
+}
