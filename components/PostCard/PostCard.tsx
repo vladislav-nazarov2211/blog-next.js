@@ -6,7 +6,7 @@ import ArrowSVG from "./arrow.svg";
 import { Likes } from "../Likes/Likes";
 import { PostCardProps } from "./PostCard.props";
 
-export const PostCard = ({ likesCount }: PostCardProps) => {
+export const PostCard = ({ likesCount }: PostCardProps): JSX.Element => {
   return (
     <div className={styles.card}>
       <div className={styles.image}>

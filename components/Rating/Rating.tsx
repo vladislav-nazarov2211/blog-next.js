@@ -11,7 +11,7 @@ export const Rating = ({
   rating,
   setRating,
   ...props
-}: RatingProps) => {
+}: RatingProps): JSX.Element => {
   const [ratingArray, setRatingArray] = useState<JSX.Element[]>(
     new Array(5).fill(<></>)
   );
@@ -70,7 +70,6 @@ export const Rating = ({
   return (
     <div {...props}>
       {ratingArray.map((r, i) => {
-        //@ts-expect-error error
         return <span key={i}>{r}</span>;
       })}
     </div>

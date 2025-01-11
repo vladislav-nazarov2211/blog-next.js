@@ -6,7 +6,7 @@ import LikeIcon from "./LikeIcon.svg";
 import classNames from "classnames";
 import { LikeProps } from "./Like.props";
 
-export const Like = ({ setLikesCount }: LikeProps) => {
+export const Like = ({ setLikesCount }: LikeProps): JSX.Element => {
   const [isActive, setIsActive] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
