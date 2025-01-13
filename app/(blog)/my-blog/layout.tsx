@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import { Header } from "@/components/Header/Header";
+import "../../globals.css";
+import { HeaderBlog } from "@/components/HeaderBlog/HeaderBlog";
 
 export const metadata: Metadata = {
   title: "blog",
@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body>
-        <Header />
+        <HeaderBlog />
         {children}
       </body>
     </html>
