@@ -1,0 +1,12 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px 0;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.post {
+  display: grid;
+  justify-content: center;
+}

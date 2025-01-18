@@ -1,9 +1,11 @@
 import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
+import { cardType } from "../Posts/dataType";
 
 export interface LikeProps
   extends DetailedHTMLProps<
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
-  setLikesCount: (count: number) => void;
+  itemID: number;
+  setCards: (cards: Array<cardType>) => void;
 }
