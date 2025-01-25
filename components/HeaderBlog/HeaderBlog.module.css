@@ -1,0 +1,16 @@
+.header {
+  height: 100px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+}

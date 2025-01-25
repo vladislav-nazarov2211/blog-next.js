@@ -9,7 +9,7 @@ export const Button = ({
   arrow = "none",
   children,
   ...props
-}: ButtonProps) => {
+}: ButtonProps): JSX.Element => {
   return (
     <button
       className={classNames(styles.button, className, styles[appearance])}

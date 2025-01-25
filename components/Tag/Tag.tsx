@@ -10,7 +10,7 @@ export const Tag = ({
   color = "ghost",
   className,
   ...props
-}: TagProps) => {
+}: TagProps): JSX.Element => {
   return (
     <div
       className={classNames(styles.tag, className, styles[size], styles[color])}
