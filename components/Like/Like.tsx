@@ -34,7 +34,13 @@ export const Like = ({ itemID, setCards }: LikeProps): JSX.Element => {
               if (el.id === itemID) {
                 return {
                   ...el,
-                  likesCount: isActive ? el.likesCount - 1 : el.likesCount + 1,
+                  likesCount: (() => {
+                    if (el?.likesCount !== undefined) {
+                      return isActive ? el?.likesCount - 1 : el?.likesCount + 1;
+                    } else {
+                      return 1;
+                    }
+                  })(),
                 };
               } else {
                 return el;

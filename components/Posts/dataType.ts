@@ -1,4 +1,7 @@
 export type cardType = {
   id: number;
-  likesCount: number;
+  userId: number;
+  likesCount?: number;
+  title: string;
+  body: string;
 };

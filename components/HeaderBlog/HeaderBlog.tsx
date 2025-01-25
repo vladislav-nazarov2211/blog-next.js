@@ -1,7 +1,12 @@
+"use client";
+
+import { useContext } from "react";
 import styles from "./HeaderBlog.module.css";
 import HeaderBlogIcon from "./headerBlogIcon.svg";
+import { BlogContext } from "@/app/(blog)/my-blog/BlogContextProvider";
 
 export const HeaderBlog = (): JSX.Element => {
+  const { gitHubLink } = useContext(BlogContext);
   return (
     <div className={styles.header}>
       <div className="container">
@@ -11,7 +16,7 @@ export const HeaderBlog = (): JSX.Element => {
           </div>
 
           <div>
-            <a target="_blank" href="https://github.com/vladislav-nazarov2211">
+            <a target="_blank" href={gitHubLink || ""}>
               <HeaderBlogIcon />
             </a>
           </div>
