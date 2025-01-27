@@ -4,8 +4,9 @@ import { Ptag } from "../Ptag/Ptag";
 import PointSVG from "./point.svg";
 import ArrowSVG from "./arrow.svg";
 import { Likes } from "../Likes/Likes";
+import { PostCardProps } from "./PostCard.props";
 
-export const PostCard = () => {
+export const PostCard = ({ likesCount }: PostCardProps): JSX.Element => {
   return (
     <div className={styles.card}>
       <div className={styles.image}>
@@ -24,7 +25,7 @@ export const PostCard = () => {
             <PointSVG />
             <span>1 месяц назад</span>
           </div>
-          <Likes count={4} />
+          <Likes count={likesCount} />
         </div>
 
         <h3 className={styles.description__title}>Как работать с CSS Grid</h3>

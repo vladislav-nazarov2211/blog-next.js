@@ -8,7 +8,7 @@ export const Ptag = ({
   children,
   className,
   ...props
-}: PtagProps) => {
+}: PtagProps): JSX.Element => {
   return (
     <p className={classNames(styles.p, className, styles[size])} {...props}>
       {children}
